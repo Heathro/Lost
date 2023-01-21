@@ -1,0 +1,32 @@
+--[[
+    Credits
+]]
+
+-- ART
+
+Hero and enemies by rvros.
+https://rvros.itch.io/animated-pixel-hero
+
+Background and tileset by Szadi art.
+https://szadiart.itch.io/platformer-fantasy-set1
+
+Collectable items by Kyrise.
+https://kyrise.itch.io/kyrises-free-16x16-rpg-icon-pack
+
+Portal by Elthen's Pixel Art Shop.
+https://elthen.itch.io/2d-pixel-art-portal-sprites
+
+Hearth by Nicole Marie T.
+https://nicolemariet.itch.io/pixel-heart-animation-32x32-16x16-freebie
+
+Fireball by NYKNCK.
+https://kvsr.itch.io/pixelarteffectfx017
+
+
+-- SOUND
+
+Sound effects by artisticdude.
+https://opengameart.org/content/rpg-sound-pack
+
+Background music by OveMelaa
+https://opengameart.org/content/oves-essential-game-audio-pack-collection-160-files-updated

@@ -1,0 +1,126 @@
+--[[
+    Dependencies
+]]
+
+-- [[ Libraries ]]
+Class = require 'lib/class'
+Push = require 'lib/push'
+Timer = require 'lib/knife.timer'
+Event = require 'lib/knife.event'
+
+-- [[ Util ]]
+require 'src/util/Constants'
+require 'src/util/Helper'
+require 'src/util/Assets'
+require 'src/util/Animation'
+require 'src/util/Shaders'
+
+-- [[ States ]]
+    -- base states
+require 'src/states/StateMachine'
+require 'src/states/BaseState'
+require 'src/states/StateStack'
+    -- game states
+require 'src/states/game/LogoState'
+require 'src/states/game/TitleState'
+require 'src/states/game/PlayState'
+require 'src/states/game/GameOverState'
+require 'src/states/game/FadeInState'
+require 'src/states/game/FadeOutState'
+require 'src/states/game/DeathState'
+require 'src/states/game/FinishState'
+require 'src/states/game/DialogueState'
+require 'src/states/game/PauseState'
+require 'src/states/game/HowToPlayState'
+    -- player general states
+require 'src/states/player/PlayerIdleState'
+require 'src/states/player/PlayerRunState'
+require 'src/states/player/PlayerJumpState'
+require 'src/states/player/PlayerFallState'
+require 'src/states/player/PlayerSitState'
+require 'src/states/player/PlayerDeathState'
+require 'src/states/player/PlayerCrouchState'
+require 'src/states/player/PlayerFlipState'
+require 'src/states/player/PlayerPullUpState'
+require 'src/states/player/PlayerHangState'
+require 'src/states/player/PlayerWalkState'
+require 'src/states/player/PlayerSlideState'
+require 'src/states/player/PlayerSprintState'
+require 'src/states/player/PlayerSlowState'
+    -- player bow states
+require 'src/states/player/PlayerShootGroundState'
+require 'src/states/player/PlayerShootJumpState'
+require 'src/states/player/PlayerShootFinishState'
+    -- player combat states
+require 'src/states/player/PlayerKickState'
+require 'src/states/player/PlayerPunchIdleState'
+require 'src/states/player/PlayerPunchRunState'
+require 'src/states/player/PlayerPreKickState'
+require 'src/states/player/PlayerFallKickState'
+require 'src/states/player/PlayerKnockDownState'
+require 'src/states/player/PlayerGetUpState'
+    -- player sword states
+require 'src/states/player/PlayerAttackUpState'
+require 'src/states/player/PlayerAttackDownState'
+require 'src/states/player/PlayerAttackJumpState'
+require 'src/states/player/PlayerAttackFallState'
+require 'src/states/player/PlayerAttackRunState'
+require 'src/states/player/PlayerPreAttackState'
+require 'src/states/player/PlayerSwoopAttackState'
+require 'src/states/player/PlayerFinishAttackState'
+    --player magic states
+require 'src/states/player/PlayerCastGroundState'
+require 'src/states/player/PlayerCastJumpState'
+require 'src/states/player/PlayerCastFinishState'
+    -- portal states
+require 'src/states/portal/PortalClosingState'
+require 'src/states/portal/PortalClosedState'
+require 'src/states/portal/PortalOpeningState'
+require 'src/states/portal/PortalOpenState'
+    -- enemy states
+require 'src/states/enemy/EnemyIdleState'
+require 'src/states/enemy/EnemyHurtState'
+require 'src/states/enemy/EnemyDieState'
+require 'src/states/enemy/EnemyAttackState'
+require 'src/states/enemy/EnemyMoveState'
+require 'src/states/enemy/EnemyCatchState'
+
+-- [[ Objects ]]
+require 'src/objects/World'
+require 'src/objects/Player'
+require 'src/objects/Portal'
+require 'src/objects/Object'
+require 'src/objects/Arrow'
+require 'src/objects/Enemy'
+require 'src/objects/Hitbox'
+require 'src/objects/Fireball'
+require 'src/objects/Water'
+
+-- [[ GUI ]]
+require 'src/gui/Events'
+require 'src/gui/GameplayUI'
+require 'src/gui/Bar'
+require 'src/gui/Popup'
+require 'src/gui/Icon'
+require 'src/gui/Panel'
+require 'src/gui/Textbox'
+require 'src/gui/Selection'
+require 'src/gui/Menu'
+
+-- [[ Data ]]
+require 'src/data/ObjectData'
+require 'src/data/ControlsData'
+require 'src/data/PlayerData'
+require 'src/data/EnemyData'
+require 'src/data/WorldOneData'
+require 'src/data/WorldTwoData'
+require 'src/data/WorldThreeData'
+require 'src/data/WorldFourData'
+require 'src/data/WorldFiveData'
+require 'src/data/WorldSixData'
+require 'src/data/LevelObjectsData'
+require 'src/data/LevelEnemiesData'
+require 'src/data/LevelData'
+require 'src/data/PortalData'
+require 'src/data/UnitData'
+require 'src/data/TextData'
