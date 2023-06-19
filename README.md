@@ -1,6 +1,4 @@
-# CS50 Final Project
-
-## "Lost"
+# "Lost"
 2D Pixel Art adventure platformer.</br>
 Our hero got to strange world through the portal. To find way back home, he needs to survive, fight, and travel from world to world through the portals.
 
