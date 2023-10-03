@@ -49,7 +49,8 @@ Tools used:
     3. Knife
 4. VS Code
 5. Krita
-6. Ubuntu
+6. Tiled
+7. Ubuntu
 
 ---
 
